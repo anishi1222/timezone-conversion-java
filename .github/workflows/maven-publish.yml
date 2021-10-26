@@ -34,7 +34,7 @@ jobs:
         pushd './${{ env.POM_XML_DIRECTORY }}'
         mvn clean package
         mvn azure-functions:package
-        ls -la ./target
+        ls -la ./target/azure-functions/${{ env.POM_FUNCTIONAPP_NAME }}
         popd
 
     - name: 'Run Azure Functions Action'
@@ -42,7 +42,7 @@ jobs:
       id: fa
       with:
         app-name: ${{ env.AZURE_FUNCTIONAPP_NAME }}
-        package: './${{ env.POM_XML_DIRECTORY }}/target/azure-functions/${{ env.POM_FUNCTIONAPP_NAME }}/*'
+        package: './${{ env.POM_XML_DIRECTORY }}/target/azure-functions/${{ env.POM_FUNCTIONAPP_NAME }}'
         publish-profile: ${{ secrets.AZURE_FUNCTIONAPP_PUBLISH_PROFILE }}
         
     - name: 'use the published functionapp url in upcoming steps'

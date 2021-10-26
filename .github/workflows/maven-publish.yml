@@ -34,7 +34,6 @@ jobs:
         pushd './${{ env.POM_XML_DIRECTORY }}'
         mvn clean package
         mvn azure-functions:package
-        ls -la ./target/azure-functions/${{ env.POM_FUNCTIONAPP_NAME }}
         popd
 
     - name: 'Run Azure Functions Action'

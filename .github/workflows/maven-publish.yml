@@ -12,7 +12,7 @@ on:
 env:
   POM_XML_DIRECTORY: '.'  # set this to the directory which contains pom.xml file
   AZURE_FUNCTIONAPP_NAME: 'time-conversion-java'
-  POM_FUNCTIONAPP_NAME: 'time-conversion-java'
+  POM_FUNCTIONAPP_NAME: 'time-conversion'
   JAVA_VERSION: '11'
 
 jobs:

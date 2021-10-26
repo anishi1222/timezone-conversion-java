@@ -14,7 +14,7 @@
         <java.version>11</java.version>
         <azure.functions.maven.plugin.version>1.14.0</azure.functions.maven.plugin.version>
         <azure.functions.java.library.version>1.4.2</azure.functions.java.library.version>
-        <functionAppName>azure-function-examples-1635209810227</functionAppName>
+        <functionAppName>timezone-conversion-java</functionAppName>
     </properties>
 
     <dependencies>

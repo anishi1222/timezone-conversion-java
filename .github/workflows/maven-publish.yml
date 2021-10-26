@@ -26,7 +26,6 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: ${{ env.JAVA_VERSION }}
-        distribution: 'microsoft'
 
     - name: 'Restore Project Dependencies Using Mvn'
       shell: bash

@@ -9,6 +9,9 @@ on:
   pull_request:
     branches: [ master ]
 
+permissions:
+  contents: read
+
 env:
   POM_XML_DIRECTORY: '.'  # set this to the directory which contains pom.xml file
   AZURE_FUNCTIONAPP_NAME: 'timezone-conversion-java'
